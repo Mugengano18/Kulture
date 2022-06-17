@@ -734,21 +734,13 @@ section {
   transition: 0.3s;
 }
 
-.cultural-benefit .icon-box i {
-  color: var(--color-primary);
-  margin-bottom: 30px;
-  font-size: 32px;
-  margin-bottom: 30px;
-  background: rgba(206, 18, 18, 0.1);
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
+.cultural-benefit .icon-box img{
+  height: 150px;
+  object-fit: cover;
 }
 
 .cultural-benefit .icon-box h4 {
+  padding-top: 10px;
   font-size: 20px;
   font-weight: 400;
   margin: 0 0 30px 0;
