@@ -713,6 +713,7 @@ section {
   color: #fff;
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
+  cursor: pointer;
 }
 
 .cultural-benefit .why-box .more-btn i {
