@@ -56,6 +56,7 @@
     
     echo'<script>alert("Thanks for your message")</script>';
     echo'<script>window.history.back()</script>';
+    // echo'<script></script>'
     // header("../index.html");
 
    }
