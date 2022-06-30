@@ -1,3 +1,5 @@
+<?php
+
 $conn=new mysqli("localhost","root","","kulture");
   if($conn->connect_error){
     echo("failed to connect".$conn->connect_error);
@@ -14,9 +16,7 @@ $conn=new mysqli("localhost","root","","kulture");
   if($conn->query($sql) === TRUE){
     
     echo'<script>alert("Thanks for your message")</script>';
-    echo'<script>window.history.back()</script>';
-    <!-- // header("../index.html"); -->
-
+    header("Location: ../index.html");
    }
   else{
     echo "Error ".$sql."<br>".$conn->error;
