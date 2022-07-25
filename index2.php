@@ -1,3 +1,8 @@
+<?php
+
+include('categories.php');
+include('./forms/logout.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,3 +1,10 @@
+
+<?php
+include('categories.php');
+include('./forms/login.php')
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -233,7 +240,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row group_overlay">
 
               <div class="col-lg-4 category-item">
                 <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg"
@@ -279,6 +286,9 @@
 
               </div><!-- category Item -->
 
+              <div class="col">
+                <a href="categories.php">Load More</a>
+              </div>
             </div>
           </div><!-- End imitako category Content -->
 

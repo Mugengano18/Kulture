@@ -12,9 +12,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="login.css">
-
     <style>
-
         	/* Coded with love by Mutiullah Samim */
    	/* Coded with love by Mutiullah Samim */
        body,
@@ -39,7 +37,6 @@
         -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 5px;
-
     }
     /* .form_container {
         margin-top: 100px;
@@ -82,7 +79,6 @@
 				</div>
                  
                 <!-- <h3>Login</h3> -->
-
 				<div class="d-flex justify-content-center">
 					<form action="authenticate.php" method="post">
 						<div class="input-group mb-2">
