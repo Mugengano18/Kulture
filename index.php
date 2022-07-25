@@ -1,7 +1,6 @@
 
 <?php
-include('categories.php');
-include('./forms/login.php')
+session_start()
 
 ?>
 
