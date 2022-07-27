@@ -1,4 +1,3 @@
-
 <?php
 session_start()
 
@@ -17,9 +16,7 @@ session_start()
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -60,15 +57,13 @@ session_start()
   <section id="home" class="home d-flex align-items-center section-bg">
     <div class="container">
       <div class="row justify-content-between gy-5">
-        <div
-          class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start ml-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start ml-5">
           <h2 data-aos="fade-up">Kulture Rwanda.<br>BANYARWANDA.</h2>
           <p data-aos="fade-up" data-aos-delay="100">Rwandans share cultural values notably unity, patriotism, social
             cohesion, resilience, hard work among others, with Kinyarwanda being the common language, spoken in all
             parts the country.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://www.youtube.com/watch?v=uOJV9OLnwT8"
-              class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Brief
+            <a href="https://www.youtube.com/watch?v=uOJV9OLnwT8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Brief
                 history</span></a>
           </div>
         </div>
@@ -90,9 +85,7 @@ session_start()
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img"
-            style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;"
-            data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;" data-aos="fade-up" data-aos-delay="150">
             <div class="call-us position-absolute">
               <h4>INTORE</h4>
             </div>
@@ -242,52 +235,42 @@ session_start()
             <div class="row group_overlay">
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg"
-                    class="category-img img-fluid" alt=""></a>
-                
-              </div><!-- category Item -->
-
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako2.jpg" class="glightbox"><img src="assets/img/imitako/imitako2.jpg"
-                    class="category-img img-fluid" alt=""></a>
-                
+                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako3.jpg" class="glightbox"><img src="assets/img/imitako/imitako3.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/imitako/imitako2.jpg" class="glightbox"><img src="assets/img/imitako/imitako2.jpg" class="category-img img-fluid" alt=""></a>
 
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg"
-                    class="category-img img-fluid" alt=""></a>
-               
+                <a href="assets/img/imitako/imitako3.jpg" class="glightbox"><img src="assets/img/imitako/imitako3.jpg" class="category-img img-fluid" alt=""></a>
 
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako5.jpg" class="glightbox"><img src="assets/img/imitako/imitako5.jpg"
-                    class="category-img img-fluid" alt=""></a>
-               
+                <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg" class="category-img img-fluid" alt=""></a>
+
 
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako6.webp" class="glightbox"><img src="assets/img/imitako/imitako6.jpg"
-                    class="category-img img-fluid" alt=""></a>
-                
+                <a href="assets/img/imitako/imitako5.jpg" class="glightbox"><img src="assets/img/imitako/imitako5.jpg" class="category-img img-fluid" alt=""></a>
+
 
 
               </div><!-- category Item -->
 
-              <div class="col">
-                <a href="categories.php">Load More</a>
-              </div>
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako6.webp" class="glightbox"><img src="assets/img/imitako/imitako6.jpg" class="category-img img-fluid" alt=""></a>
+
+
+
+              </div><!-- category Item -->
             </div>
           </div><!-- End imitako category Content -->
 
@@ -301,34 +284,28 @@ session_start()
             <div class="row gy-5">
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg" class="category-img img-fluid" alt=""></a>
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg" class="category-img img-fluid" alt=""></a>
 
               </div><!-- category Item -->
 
@@ -344,39 +321,32 @@ session_start()
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg"
-                    style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid"
-                    alt=""></a>
+                <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </p>
               </div><!-- Category Item -->
@@ -394,22 +364,25 @@ session_start()
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/inkandaclothing1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-                
+
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/inkandaclothing2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-                
+
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/inkandaclothing3.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-                
-          </div>
+
+              </div>
 
             </div>
           </div><!-- End entertainment Category Content -->
 
+        </div>
+        <div class="col">
+          <a href="categories.php">Load More</a>
         </div>
 
       </div>
@@ -427,8 +400,7 @@ session_start()
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide museum-item d-flex flex-column justify-content-end"
-              style="background-image: url(assets/img/museums/museum4.jpg); background-size:cover;">
+            <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum4.jpg); background-size:cover;">
               <h3>Ethnographic museum of Rwanda</h3>
               <p class="description">
 
@@ -439,8 +411,7 @@ session_start()
               </p>
             </div>
 
-            <div class="swiper-slide museum-item d-flex flex-column justify-content-end"
-              style="background-image: url(assets/img/museums/museum3.jpg); background-size:cover;">
+            <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum3.jpg); background-size:cover;">
               <h3>King 's Palace</h3>
 
               <p class="description">
@@ -449,8 +420,7 @@ session_start()
               </p>
             </div>
 
-            <div class="swiper-slide museum-item d-flex flex-column justify-content-end"
-              style="background-image: url(assets/img/museums/museum2.jpeg);background-size:contain;">
+            <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum2.jpeg);background-size:contain;">
               <h3>Rwanda Art museum</h3>
 
               <p class="description">
@@ -477,68 +447,39 @@ session_start()
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/igisabo2.jpg"><img src="assets/img/gallery/igisabo2.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/igisabo3.jpg"><img src="assets/img/gallery/igisabo3.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/imbehe1.jpg"><img src="assets/img/gallery/imbehe1.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/ingobyi2.jfif"><img src="assets/img/gallery/ingobyi2.jfif" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/ingoma1.jpg"><img src="assets/img/gallery/ingoma1.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/inkongoro.jpg"><img src="assets/img/gallery/inkongoro.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/inkongoro4.jpg"><img src="assets/img/gallery/inkongoro4.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/inkongoro6.jpg"><img src="assets/img/gallery/inkongoro6.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k1.jpg"><img src="assets/img/gallery/k1.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/igisabo2.jpg"><img src="assets/img/gallery/igisabo2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/igisabo3.jpg"><img src="assets/img/gallery/igisabo3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/imbehe1.jpg"><img src="assets/img/gallery/imbehe1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/ingobyi2.jfif"><img src="assets/img/gallery/ingobyi2.jfif" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/ingoma1.jpg"><img src="assets/img/gallery/ingoma1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/inkongoro.jpg"><img src="assets/img/gallery/inkongoro.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/inkongoro4.jpg"><img src="assets/img/gallery/inkongoro4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/inkongoro6.jpg"><img src="assets/img/gallery/inkongoro6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k1.jpg"><img src="assets/img/gallery/k1.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k11.jpg"><img src="assets/img/gallery/k11.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k11.jpg"><img src="assets/img/gallery/k11.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k12.jpg"><img src="assets/img/gallery/k12.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k12.jpg"><img src="assets/img/gallery/k12.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k3.jpg"><img src="assets/img/gallery/k3.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k3.jpg"><img src="assets/img/gallery/k3.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k4.jpg"><img src="assets/img/gallery/k4.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k4.jpg"><img src="assets/img/gallery/k4.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k17.jpg"><img src="assets/img/gallery/k17.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k17.jpg"><img src="assets/img/gallery/k17.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k2.jpg"><img src="assets/img/gallery/k2.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k2.jpg"><img src="assets/img/gallery/k2.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k15.jpg"><img src="assets/img/gallery/k15.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k15.jpg"><img src="assets/img/gallery/k15.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k5.jpg"><img src="assets/img/gallery/k5.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k5.jpg"><img src="assets/img/gallery/k5.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k19.jpg"><img src="assets/img/gallery/k19.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k19.jpg"><img src="assets/img/gallery/k19.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k22.jpg"><img src="assets/img/gallery/k22.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k22.jpg"><img src="assets/img/gallery/k22.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k23.jpg"><img src="assets/img/gallery/k23.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k23.jpg"><img src="assets/img/gallery/k23.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k20.jpg"><img src="assets/img/gallery/k20.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k20.jpg"><img src="assets/img/gallery/k20.jpg" class="img-fluid" alt=""></a>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -634,8 +575,7 @@ session_start()
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
