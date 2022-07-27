@@ -92,7 +92,10 @@
             background-color: #ffffff !important;
         }
         form{
-            width: 95%;
+            width: 100%;
+        }
+        button{
+            width: 200px;
         }
     </style>
 </head>
@@ -102,8 +105,8 @@
     <div class="container h-100">
         <div class="d-flex justify-content-center h-100">
             <div class="user_card ">
-                <div class="d-flex justify-content-center pt-4 mb-2">
-                    <h1>Sign Up</h1>
+                <div class="d-flex justify-content-center pt-4 mb-5">
+                    <h1>SIGN UP</h1>
                 </div>
 
                 <div class="d-flex justify-content-center">
