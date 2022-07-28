@@ -8,6 +8,7 @@
 
 <head>
 
+    <title>Sign Ups</title>
     <!-- <title>My Awesome Login Page</title> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -41,8 +42,6 @@
         .user_card {
             height: auto;
             width: 500px;
-            margin-top: auto;
-            margin-bottom: auto;
             background: #ffffff;
             position: relative;
             display: flex;
@@ -63,9 +62,11 @@
             background: #825834 !important;
             color: white !important;
         }
-        .login_btn:hover{
+
+        .login_btn:hover {
             background: #d4c2c0 !important;
         }
+
         .login_btn:focus {
             box-shadow: none !important;
             outline: 0px !important;
@@ -91,10 +92,12 @@
         .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
             background-color: #ffffff !important;
         }
-        form{
+
+        form {
             width: 100%;
         }
-        button{
+
+        button {
             width: 200px;
         }
     </style>

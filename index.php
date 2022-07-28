@@ -85,7 +85,7 @@ session_start()
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;" data-aos="fade-up" data-aos-delay="150" title="Intore">
             <div class="call-us position-absolute">
               <h4>INTORE</h4>
             </div>
@@ -108,7 +108,7 @@ session_start()
               </p>
 
               <div class="position-relative mt-4">
-                <img src="assets/img/kingpalace.jpg" class="img-fluid" alt="">
+                <img src="assets/img/kingpalace.jpg" class="img-fluid" alt="King's palace">
                 <a href="https://www.youtube.com/watch?v=zmy-zm1Z0b8" class="glightbox play-btn"></a>
               </div>
             </div>
@@ -131,7 +131,7 @@ session_start()
                 Discover Rwanda's people and culture, as well as its customs, rituals, and way of life, through Visit & Tour Rwanda.
                 Attend cultural nights that are enjoyable and educational for both locals and visitors.</p>
               <div class="text-center">
-                <a onclick="myFunction()" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="categories.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ session_start()
 
     <!-- ======= culture showcase Section ======= -->
     <section id="" class="culture-showcase">
-      <div class="container" data-aos="zoom-out">
+      <div class="container" data-aos="zoom-out" title="Traditional Rwandan Youth">
         <div class="row gy-4">
         </div>
       </div>
@@ -236,7 +236,7 @@ session_start()
             <div class="row group_overlay">
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt="" title="inyegamo"></a>
 
               </div><!-- category Item -->
 
