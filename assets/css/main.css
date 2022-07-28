@@ -915,8 +915,8 @@ section {
 }
 
 .category .category-item img {
-  width: 1000px;
-  height: 1000px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 17px;
 }

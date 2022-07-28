@@ -49,6 +49,9 @@ if (isset($_SESSION['id'])) {
         opacity: 1;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
+      .card{
+        margin-top: 30px;
+      }
     </style>
   </head>
 
@@ -57,7 +60,7 @@ if (isset($_SESSION['id'])) {
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <a href="index.html" class="logo d-flex align-items-center me-auto ml-0">
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1>Kulture<span>.</span></h1>
         </a>
@@ -79,7 +82,7 @@ if (isset($_SESSION['id'])) {
     <!-- End Header -->
     <main>
       <section id="category" class="category">
-        <div class="container-fluid" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
           <ul class="nav nav-tabs d-flex justify-content-center mt-5 mb-5" data-aos="fade-up" data-aos-delay="200">
 
             <li class="nav-item">
@@ -106,19 +109,10 @@ if (isset($_SESSION['id'])) {
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
-                <h4>Clothing</h4>
+                <h4>Others</h4>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
-                <h4>Clothing</h4>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
-                <h4>Clothing</h4>
-              </a>
-            </li>
+           
             <!-- End tab nav item -->
 
           </ul>
@@ -127,10 +121,10 @@ if (isset($_SESSION['id'])) {
 
             <div class="tab-pane fade active show" id="imitako">
 
-              <div class="row group_overlay">
+              <div class="row group_overlay d-flex justify-content-start">
 
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
                     <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
@@ -139,7 +133,7 @@ if (isset($_SESSION['id'])) {
                   </div>
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
                     <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
@@ -150,7 +144,7 @@ if (isset($_SESSION['id'])) {
 
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
                     <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
@@ -158,16 +152,7 @@ if (isset($_SESSION['id'])) {
                     </div>
                   </div>
                 </div><!-- category Item -->
-                <div class="col-lg-4 category-item">
-                  <div class="card" style="width: 18rem;">
-                    <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div><!-- category Item -->
-
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
                     <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
@@ -176,7 +161,16 @@ if (isset($_SESSION['id'])) {
                   </div>
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
                     <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
@@ -189,35 +183,30 @@ if (isset($_SESSION['id'])) {
 
             <div class="tab-pane fade" id="abami">
 
-              <div class="tab-header text-center">
-
-                <h3>Kings(Abami)</h3>
-              </div>
-
               <div class="row gy-5">
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg" class="category-img img-fluid" alt=""></a>
 
                 </div><!-- category Item -->
 
-                <div class="col-lg-4 category-item">
+                <div class="col-3 category-item">
                   <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg" class="category-img img-fluid" alt=""></a>
 
                 </div><!-- category Item -->
@@ -227,38 +216,35 @@ if (isset($_SESSION['id'])) {
 
             <div class="tab-pane fade" id="imyidagaduro">
 
-              <div class="tab-header text-center">
-                <h3>Imyidagaduro</h3>
-              </div>
-
+             
               <div class="row gy-5">
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div><!-- Category Item -->
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div><!-- Category Item -->
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div><!-- Category Item -->
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div><!-- Category Item -->
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div><!-- Category Item -->
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                   </p>
@@ -269,23 +255,21 @@ if (isset($_SESSION['id'])) {
 
             <div class="tab-pane fade" id="imyambaro">
 
-              <div class="tab-header text-center">
-                <h3>Imyambaro</h3>
-              </div>
+             
 
               <div class="row gy-5">
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/inkandaclothing1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div><!-- Category Item -->
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/inkandaclothing2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div><!-- Category Item -->
 
-                <div class="col-lg-4 menu-item">
+                <div class="col-3 menu-item">
                   <a href="assets/img/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/inkandaclothing3.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
                 </div>
