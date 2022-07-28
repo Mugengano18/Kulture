@@ -15,8 +15,13 @@ $conn=new mysqli("localhost","root","","kulture");
   $sql="INSERT INTO comments(name,email,subject,message,date) VALUES('$name','$email','$subject','$message','$date')";
   if($conn->query($sql) === TRUE){
     
-    echo'<script>alert("Thanks for your message")</script>';
-    header("Location: ../index.html");
+    // echo'<script>alert("Thanks for your message")</script>';
+    // header("Location: ../index.php");
+
+    echo "<script>
+     window. location. href = '../index.php';
+     alert('Thank you for your message');
+    </script>";
    }
   else{
     echo "Error ".$sql."<br>".$conn->error;

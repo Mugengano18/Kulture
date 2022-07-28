@@ -60,14 +60,17 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
                 $_SESSION['id'] = $row['id'];
 
-                if($id==1){
+                if($id==2){
+                    header("Location: ../categories.php");
 
-                    header("Location: ../index.php");
+                }
+                else if($id==3){
+                    header("Location: ../learnmore.php");
 
                 }
                 else{
-                    header("Location: ../categories.php");
-
+                    header("Location: ../index.php");
+                   
                 }
 
                 

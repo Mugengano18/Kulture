@@ -98,7 +98,25 @@
 
                 <!-- <h3>Login</h3> -->
                 <div class="d-flex justify-content-center">
-                    <form action="authenticate.php?id=1" method="post">
+
+                <?php
+                if($id=2){
+                ?>
+                <form action="authenticate.php?id=2" method="post">
+            
+                 <?php
+                }
+                else if($id=3){
+                ?>
+                <form action="authenticate.php?id=3" method="post">
+              <?php
+               }
+                else {
+                ?>
+                <form action="authenticate.php?id=1" method="post">
+                <?php
+                }
+                ?>
                         <div class="input-group mb-2">
 
                             <input type="text" name="username" class="form-control input_user" value="" placeholder="username">

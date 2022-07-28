@@ -144,7 +144,7 @@ session_start()
                 Discover Rwanda's people and culture, as well as its customs, rituals, and way of life, through Visit & Tour Rwanda.
                 Attend cultural nights that are enjoyable and educational for both locals and visitors.</p>
               <div class="text-center">
-                <a href="categories.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="learnmore.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
                 <?php
                       //  echo '<a href="pass.php?link=' . $a . '>Link 1</a>';
                 ?>
