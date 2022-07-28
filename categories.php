@@ -1,7 +1,7 @@
 <?php
+session_start();
 
-if (isset($_SESSION['user'])) {
-
+if (isset($_SESSION['id'])){
 
 ?>
 
@@ -70,103 +70,215 @@ if (isset($_SESSION['user'])) {
           <li><a href="index.php #museum">Museums</a></li>
           <li><a href="index.php #gallery">Gallery</a></li>
           <li><a href="index.php #contact">Contacts</a></li>
-          <li><a href="./forms/login.php">Login</a></li>
+          <li><a href="./forms/logout.php">Logout</a></li>
         </ul>
       </nav><!-- .navbar -->
 
     </div>
   </header>
   <!-- End Header -->
-  <main style="width: 100%;
-  min-height: 60vh;
-  padding: 120px 30px">
-    <!-- Gallery -->
-    <div class="container">
-      <div class="row d-flex flex-wrap align-items-center" data-toggle="modal" data-target="#lightbox">
-        <div class="col-12 col-md-6 col-lg-3">
+  <main>
+    <section id="category" class="category">
+      <div class="container-fluid" data-aos="fade-up">
+        <ul class="nav nav-tabs d-flex justify-content-center mt-5 mb-5" data-aos="fade-up" data-aos-delay="200">
 
-          <img src="https://source.unsplash.com/random/200" data-target="#indicators" data-slide-to="0" alt="" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="https://source.unsplash.com/random/201" data-target="#indicators" data-slide-to="1" alt="" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="https://source.unsplash.com/random/202" data-target="#indicators" data-slide-to="2" alt="" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="https://source.unsplash.com/random/203" data-target="#indicators" data-slide-to="3" alt="" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="https://source.unsplash.com/random/204" data-target="#indicators" data-slide-to="3" alt="" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <img src="https://source.unsplash.com/random/205" data-target="#indicators" data-slide-to="4" alt="" />
-        </div>
-      </div>
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#imitako">
+              <h4>Decorations</h4>
+            </a>
+          </li><!-- End tab nav item -->
 
-      <!-- Modal -->
-      <div class="modal fade" id="lightbox" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <button type="button" class="close text-right p-2" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div id="indicators" class="carousel slide" data-interval="false">
-              <ol class="carousel-indicators">
-                <li data-target="#indicators" data-slide-to="0" class="active"></li>
-                <li data-target="#indicators" data-slide-to="1"></li>
-                <li data-target="#indicators" data-slide-to="2"></li>
-                <li data-target="#indicators" data-slide-to="3"></li>
-                <li data-target="#indicators" data-slide-to="4"></li>
-                <li data-target="#indicators" data-slide-to="5"></li>
-              </ol>
-              <div class="carousel-inner">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#abami">
+              <h4>Kings</h4>
+            </a><!-- End tab nav item -->
 
-                <div class="carousel-item active">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyidagaduro">
+              <h4>Entertainment</h4>
+            </a>
+          </li><!-- End tab nav item -->
 
-                  <img class="d-block w-100" src="https://source.unsplash.com/random/200" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="https://source.unsplash.com/random/201" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="https://source.unsplash.com/random/202" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="https://source.unsplash.com/random/203" alt="Fourth slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="https://source.unsplash.com/random/204" alt="Fifth slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="https://source.unsplash.com/random/205" alt="Sixth slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="imitako">
+
+            <div class="row group_overlay">
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako2.jpg" class="glightbox"><img src="assets/img/imitako/imitako2.jpg" class="category-img img-fluid" alt=""></a>
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako3.jpg" class="glightbox"><img src="assets/img/imitako/imitako3.jpg" class="category-img img-fluid" alt=""></a>
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg" class="category-img img-fluid" alt=""></a>
+
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako5.jpg" class="glightbox"><img src="assets/img/imitako/imitako5.jpg" class="category-img img-fluid" alt=""></a>
+
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako6.webp" class="glightbox"><img src="assets/img/imitako/imitako6.jpg" class="category-img img-fluid" alt=""></a>
+
+
+
+              </div><!-- category Item -->
+            </div>
+          </div><!-- End imitako category Content -->
+
+          <div class="tab-pane fade" id="abami">
+
+            <div class="tab-header text-center">
+
+              <h3>Kings(Abami)</h3>
             </div>
 
-          </div>
+            <div class="row gy-5">
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg" class="category-img img-fluid" alt=""></a>
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg" class="category-img img-fluid" alt=""></a>
+
+              </div><!-- category Item -->
+
+            </div>
+          </div><!-- End abami category Content -->
+
+          <div class="tab-pane fade" id="imyidagaduro">
+
+            <div class="tab-header text-center">
+              <h3>Imyidagaduro</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                </p>
+              </div><!-- Category Item -->
+
+            </div>
+          </div><!-- End imyidagaduro category Content -->
+
+          <div class="tab-pane fade" id="imyambaro">
+
+            <div class="tab-header text-center">
+              <h3>Imyambaro</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/inkandaclothing1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/inkandaclothing2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/inkandaclothing3.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div>
+
+            </div>
+          </div><!-- End entertainment Category Content -->
+
         </div>
       </div>
-    </div>
-    <!-- end of gallery -->
+    </section>
 
-    <?php
-}
-
-else{
-  
-  header("Location: ./forms/login.php");
-}
-
-?>
   </main>
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -210,7 +322,14 @@ else{
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<?php
+}
+else{
 
+  header("Location: ./forms/login.php?id=2");
+}
+
+?>
 
 </body>
 

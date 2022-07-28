@@ -60,7 +60,17 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
                 $_SESSION['id'] = $row['id'];
 
-                header("Location: ../index2.php");
+                if($id==1){
+
+                    header("Location: ../index.php");
+
+                }
+                else{
+                    header("Location: ../categories.php");
+
+                }
+
+                
 
                 exit();
 
@@ -89,5 +99,6 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     exit();
 
 }
+die();
 
 ?>

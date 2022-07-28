@@ -98,7 +98,7 @@
 
                 <!-- <h3>Login</h3> -->
                 <div class="d-flex justify-content-center">
-                    <form action="authenticate.php" method="post">
+                    <form action="authenticate.php?id=1" method="post">
                         <div class="input-group mb-2">
 
                             <input type="text" name="username" class="form-control input_user" value="" placeholder="username">

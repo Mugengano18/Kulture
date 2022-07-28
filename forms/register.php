@@ -16,7 +16,7 @@ $confirm_password=$_POST['confirm_password'];
 $sql="INSERT INTO user (name,email,address,username,password,confirm_password) VALUES('$name','$email','$address','$username','$password','$confirm_password')";
 
 if($conn->query($sql) === TRUE){
-    header("location: login.php");
+    header("Location: login.php");
 }
 else{
     echo "Error ".$sql."<br>".$conn->error;
