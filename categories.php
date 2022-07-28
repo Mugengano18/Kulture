@@ -16,11 +16,8 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -62,37 +59,208 @@
     </div>
   </header>
   <!-- End Header -->
-  <main style="width: 100%;
-  min-height: 60vh;
-  padding: 120px 30px">
-  <!-- Gallery -->
-  <div class="lightbox">
-  <div class="row">
-    <div class="col-lg-6">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-        alt="Table Full of Spices"
-        class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
-      />
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp"
-        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
-        alt="Coconut with Strawberries"
-        class="w-100 shadow-1-strong rounded"
-      />
-    </div>
-    <div class="col-lg-6">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Vertical/1.webp"
-        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
-        alt="Dark Roast Iced Coffee"
-        class="w-100 shadow-1-strong rounded"
-      />
-    </div>
-  </div>
-</div>
-    <!-- end of gallery -->
+  <main>
+    <section id="category" class="category">
+      <div class="container-fluid" data-aos="fade-up">
+        <ul class="nav nav-tabs d-flex justify-content-center mt-5 mb-5" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#imitako">
+              <h4>Decorations</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#abami">
+              <h4>Kings</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyidagaduro">
+              <h4>Entertainment</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
+              <h4>Clothing</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="imitako">
+
+            <div class="row group_overlay">
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako2.jpg" class="glightbox"><img src="assets/img/imitako/imitako2.jpg" class="category-img img-fluid" alt=""></a>
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako3.jpg" class="glightbox"><img src="assets/img/imitako/imitako3.jpg" class="category-img img-fluid" alt=""></a>
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg" class="category-img img-fluid" alt=""></a>
+
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako5.jpg" class="glightbox"><img src="assets/img/imitako/imitako5.jpg" class="category-img img-fluid" alt=""></a>
+
+
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/imitako/imitako6.webp" class="glightbox"><img src="assets/img/imitako/imitako6.jpg" class="category-img img-fluid" alt=""></a>
+
+
+
+              </div><!-- category Item -->
+            </div>
+          </div><!-- End imitako category Content -->
+
+          <div class="tab-pane fade" id="abami">
+
+            <div class="tab-header text-center">
+
+              <h3>Kings(Abami)</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg" class="category-img img-fluid" alt=""></a>
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg" class="category-img img-fluid" alt=""></a>
+
+              </div><!-- category Item -->
+
+              <div class="col-lg-4 category-item">
+                <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg" class="category-img img-fluid" alt=""></a>
+
+              </div><!-- category Item -->
+
+            </div>
+          </div><!-- End abami category Content -->
+
+          <div class="tab-pane fade" id="imyidagaduro">
+
+            <div class="tab-header text-center">
+              <h3>Imyidagaduro</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                </p>
+              </div><!-- Category Item -->
+
+            </div>
+          </div><!-- End imyidagaduro category Content -->
+
+          <div class="tab-pane fade" id="imyambaro">
+
+            <div class="tab-header text-center">
+              <h3>Imyambaro</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/inkandaclothing1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/inkandaclothing2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div><!-- Category Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/inkandaclothing3.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+              </div>
+
+            </div>
+          </div><!-- End entertainment Category Content -->
+
+        </div>
+      </div>
+    </section>
+
   </main>
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -123,8 +291,7 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
@@ -133,9 +300,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
