@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="420a6fad-c8de-46f1-a46b-58b847aa1c97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gallery/k9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/img/IMG-0928.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/img/agaseke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/img/amasunzu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/imigongo.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/ingobyi2.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/museums/museum2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/museums/museum3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/museums/museum4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/umuganda.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/why1.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/connection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/signUp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forms/submit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vendor/purecounter/purecounter_vanilla.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms/Readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms/book-a-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/forms/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="420a6fad-c8de-46f1-a46b-58b847aa1c97" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
