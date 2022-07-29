@@ -1,3 +1,8 @@
+<?php
+session_start()
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +16,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -43,6 +46,20 @@
           <li><a href="#museum">Museums</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contacts</a></li>
+          <?php
+
+          if (isset($_SESSION['id'])) {
+          ?>
+
+            <li><a href="./forms/logout.php">Logout</a></li>
+          <?php
+          } else {
+          ?>
+            <li><a href="./forms/login.php">Login</a></li>
+          <?php
+          }
+          ?>
+
         </ul>
       </nav><!-- .navbar -->
 
@@ -53,15 +70,13 @@
   <section id="home" class="home d-flex align-items-center section-bg">
     <div class="container">
       <div class="row justify-content-between gy-5">
-        <div
-          class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start ml-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start ml-5">
           <h2 data-aos="fade-up">Kulture Rwanda.<br>BANYARWANDA.</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Rwandans share cultural values notably unity, patriotism, social
-            cohesion, resilience, hard work among others, with Kinyarwanda being the common language, spoken in all
-            parts the country.</p>
+          <p data-aos="fade-up" data-aos-delay="100">Rwandans share cultural values such as togetherness,
+            patriotism, social cohesiveness, resilience, and hard work, among others, with Kinyarwanda
+            being the common language used throughout the country.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://www.youtube.com/watch?v=uOJV9OLnwT8"
-              class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Brief
+            <a href="https://www.youtube.com/watch?v=uOJV9OLnwT8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Brief
                 history</span></a>
           </div>
         </div>
@@ -83,9 +98,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img"
-            style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;"
-            data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;" data-aos="fade-up" data-aos-delay="150" title="Intore">
             <div class="call-us position-absolute">
               <h4>INTORE</h4>
             </div>
@@ -108,7 +121,7 @@
               </p>
 
               <div class="position-relative mt-4">
-                <img src="assets/img/kingpalace.jpg" class="img-fluid" alt="">
+                <img src="assets/img/kingpalace.jpg" class="img-fluid" alt="King's palace">
                 <a href="https://www.youtube.com/watch?v=zmy-zm1Z0b8" class="glightbox play-btn"></a>
               </div>
             </div>
@@ -128,14 +141,14 @@
             <div class="why-box">
               <h3>Rwandan Culture and Traditions</h3>
               <p>
-                Weaving and basket making is a traditional art still used today to make dry containers for storing food
-                and medicines. These are also known as peace pots and had traditional values such as to commemorate
-                weddings or as a welcome gift.
-
-
-              </p>
+                Discover Rwanda's people and culture, as well as its customs, rituals, and way of life, through Visit & Tour Rwanda.
+                Attend cultural nights that are enjoyable and educational for both locals and visitors.</p>
               <div class="text-center">
-                <a onclick="myFunction()" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="learnmore.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <?php
+                //  echo '<a href="pass.php?link=' . $a . '>Link 1</a>';
+                ?>
+
               </div>
             </div>
           </div>
@@ -145,10 +158,13 @@
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/IMG-0928.JPG" alt="" class="img-fluid">
-                  <h4>Poetry</h4>
-                  <p>Ibitekerezo is a form of epic hero poetry that was performed at the royal court in precolonial
-                    Rwanda. This oral tradition serves to explain the history of Rwandan dynasties in poetic form. </p>
+                  <img src="assets/img/highlights/Amasunzu hairstyle_ Rwanda.png" alt="" class="img-fluid">
+                  <h4>Amasunzu</h4>
+                  <p>The Amasunzu traditional hairdo is without a doubt one of the most inventive.
+                    It was and still is a sign of pride in Rwanda, and it is still worn today.
+                    The distinctive look is achieved by cutting portion of the hair horizontally and braiding the top.
+                    A person with this haircut was seen to be powerful, aristocratic, dignified, and fearless.
+                  </p>
                 </div>
               </div>
 
@@ -156,17 +172,19 @@
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/img/imigongo.jfif" alt="" class="img-fluid">
                   <h4>Imigongo</h4>
-                  <p>A distinctively Rwandan craft is the Imigongo or cow dung paintings that are produced by a local
-                    co-operative in the village of Nyakarambi near the border with Tanzania.</p>
+                  <p>Imigongo, or cow dung paintings, are a uniquely Rwandan craft made by a local co-operative
+                    in the community of Nyakarambi near the Tanzanian border. These one-of-a-kind and earthy pieces,
+                    dominated by black, brown, and white whirls and other geometric patterns, can be found in artisan markets around the country.</p>
                 </div>
               </div>
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/umuganda.jpg" alt="" class="img-fluid">
-                  <h4>Umuganda</h4>
-                  <p>In traditional Rwandan culture, members of the community would call upon their family, friends and
-                    neighbors to help them complete a difficult task.</p>
+                  <img src="assets/img/highlights/Support Female Empowerment _ Indego Africa.jpg" alt="" class="img-fluid">
+                  <h4>Artisanal Crafts</h4>
+                  <p>Weaving and basket building are historic crafts that are being practiced today to provide dry containers for storing food and medications.
+                    Pottery is one of Rwanda's earliest kinds of art, and it is being practiced in many places today utilizing ancient Batwa techniques.
+                    These potteries, known for their high quality clay, are still commonly used for cooking and storing liquids.</p>
                 </div>
               </div>
 
@@ -180,7 +198,7 @@
 
     <!-- ======= culture showcase Section ======= -->
     <section id="" class="culture-showcase">
-      <div class="container" data-aos="zoom-out">
+      <div class="container" data-aos="zoom-out" title="Traditional Rwandan Youth">
         <div class="row gy-4">
         </div>
       </div>
@@ -213,11 +231,6 @@
             </a>
           </li><!-- End tab nav item -->
 
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
-              <h4>Clothing</h4>
-            </a>
-          </li>
           <!-- End tab nav item -->
 
         </ul>
@@ -234,48 +247,22 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg"
-                    class="category-img img-fluid" alt=""></a>
-                
-              </div><!-- category Item -->
-
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako2.jpg" class="glightbox"><img src="assets/img/imitako/imitako2.jpg"
-                    class="category-img img-fluid" alt=""></a>
-                
+              <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg" class="category-img img-fluid" alt="" title="inkoko"></a>
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako3.jpg" class="glightbox"><img src="assets/img/imitako/imitako3.jpg"
-                    class="category-img img-fluid" alt=""></a>
+              <a href="assets/img/imitako/insika.png" class="glightbox"><img src="assets/img/imitako/insika.png" class="category-img img-fluid" alt="" title="insika"></a>
 
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg"
-                    class="category-img img-fluid" alt=""></a>
-               
+              <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt="" title="wall basket"></a>
 
 
               </div><!-- category Item -->
 
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako5.jpg" class="glightbox"><img src="assets/img/imitako/imitako5.jpg"
-                    class="category-img img-fluid" alt=""></a>
-               
-
-
-              </div><!-- category Item -->
-
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako6.webp" class="glightbox"><img src="assets/img/imitako/imitako6.jpg"
-                    class="category-img img-fluid" alt=""></a>
-                
-
-
-              </div><!-- category Item -->
 
             </div>
           </div><!-- End imitako category Content -->
@@ -290,36 +277,18 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg"
-                    class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg"
-                    class="category-img img-fluid" alt=""></a>
-              </div><!-- category Item -->
 
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg"
-                    class="category-img img-fluid" alt=""></a>
-
-              </div><!-- category Item -->
-
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg"
-                    class="category-img img-fluid" alt=""></a>
-
-              </div><!-- category Item -->
 
             </div>
           </div><!-- End abami category Content -->
@@ -333,74 +302,29 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
               </div><!-- Category Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg"
-                    style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid"
-                    alt=""></a>
 
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg"
-                    style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-                </p>
-              </div><!-- Category Item -->
 
             </div>
           </div><!-- End imyidagaduro category Content -->
 
-          <div class="tab-pane fade" id="imyambaro">
-
-            <div class="tab-header text-center">
-              <h3>Imyambaro</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/inkandaclothing1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-                
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/inkandaclothing2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-                
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/inkandaclothing3.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-                
-          </div>
-
-            </div>
-          </div><!-- End entertainment Category Content -->
-
         </div>
-
+        <div class="text-center load_cat mt-5" data-aos="fade-up" data-aos-delay="200">
+          <a href="categories.php">Load More</a>
+        </div>
       </div>
     </section><!-- End Category Section -->
 
@@ -416,9 +340,10 @@
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide museum-item d-flex flex-column justify-content-end"
-              style="background-image: url(assets/img/museums/museum4.jpg); background-size:cover;">
-              <h3>Ethnographic museum of Rwanda</h3>
+            <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum4.jpg); background-size:cover;">
+              <a href="https://museum.gov.rw/index.php?id=68&L=956">
+                <h3><u>Ethnographic Museum</u></h3>
+              </a>
               <p class="description">
 
                 A gift from Belgium’s King Badouin in the late 1980s, the Ethnographic Museum now houses one of Africa’s
@@ -428,9 +353,10 @@
               </p>
             </div>
 
-            <div class="swiper-slide museum-item d-flex flex-column justify-content-end"
-              style="background-image: url(assets/img/museums/museum3.jpg); background-size:cover;">
-              <h3>King 's Palace</h3>
+            <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum3.jpg); background-size:cover;">
+              <a href="https://museum.gov.rw/index.php?id=69&L=956">
+                <h3><u>King's Palace</u></h3>
+              </a>
 
               <p class="description">
                 A reconstruction of the traditional royal residence, the King’s Palace is a beautifully-crafted thatched
@@ -438,9 +364,10 @@
               </p>
             </div>
 
-            <div class="swiper-slide museum-item d-flex flex-column justify-content-end"
-              style="background-image: url(assets/img/museums/museum2.jpeg);background-size:contain;">
-              <h3>Rwanda Art museum</h3>
+            <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum2.jpeg);background-size:contain;">
+              <a href="http://www.museum.gov.rw/index.php?id=2">
+                <h3><u> Rwanda Art Museum</u></h3>
+              </a>
 
               <p class="description">
                 Formerly the Presidential Palace Museum, this new museum displays contemporary artworks from Rwanda as
@@ -466,68 +393,39 @@
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/igisabo2.jpg"><img src="assets/img/gallery/igisabo2.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/igisabo3.jpg"><img src="assets/img/gallery/igisabo3.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/imbehe1.jpg"><img src="assets/img/gallery/imbehe1.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/ingobyi2.jfif"><img src="assets/img/gallery/ingobyi2.jfif" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/ingoma1.jpg"><img src="assets/img/gallery/ingoma1.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/inkongoro.jpg"><img src="assets/img/gallery/inkongoro.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/inkongoro4.jpg"><img src="assets/img/gallery/inkongoro4.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/inkongoro6.jpg"><img src="assets/img/gallery/inkongoro6.jpg" class="img-fluid"
-                  alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k1.jpg"><img src="assets/img/gallery/k1.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/igisabo2.jpg"><img src="assets/img/gallery/igisabo2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/igisabo3.jpg"><img src="assets/img/gallery/igisabo3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/imbehe1.jpg"><img src="assets/img/gallery/imbehe1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/ingobyi2.jfif"><img src="assets/img/gallery/ingobyi2.jfif" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/ingoma1.jpg"><img src="assets/img/gallery/ingoma1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/inkongoro.jpg"><img src="assets/img/gallery/inkongoro.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/inkongoro4.jpg"><img src="assets/img/gallery/inkongoro4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/inkongoro6.jpg"><img src="assets/img/gallery/inkongoro6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k1.jpg"><img src="assets/img/gallery/k1.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k11.jpg"><img src="assets/img/gallery/k11.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k11.jpg"><img src="assets/img/gallery/k11.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k12.jpg"><img src="assets/img/gallery/k12.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k12.jpg"><img src="assets/img/gallery/k12.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k3.jpg"><img src="assets/img/gallery/k3.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k3.jpg"><img src="assets/img/gallery/k3.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k4.jpg"><img src="assets/img/gallery/k4.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k4.jpg"><img src="assets/img/gallery/k4.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k17.jpg"><img src="assets/img/gallery/k17.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k17.jpg"><img src="assets/img/gallery/k17.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k2.jpg"><img src="assets/img/gallery/k2.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k2.jpg"><img src="assets/img/gallery/k2.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k15.jpg"><img src="assets/img/gallery/k15.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k15.jpg"><img src="assets/img/gallery/k15.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k5.jpg"><img src="assets/img/gallery/k5.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k5.jpg"><img src="assets/img/gallery/k5.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k19.jpg"><img src="assets/img/gallery/k19.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k19.jpg"><img src="assets/img/gallery/k19.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k22.jpg"><img src="assets/img/gallery/k22.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k22.jpg"><img src="assets/img/gallery/k22.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k23.jpg"><img src="assets/img/gallery/k23.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k23.jpg"><img src="assets/img/gallery/k23.jpg" class="img-fluid" alt=""></a>
             </div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/k20.jpg"><img src="assets/img/gallery/k20.jpg" class="img-fluid" alt=""></a>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/k20.jpg"><img src="assets/img/gallery/k20.jpg" class="img-fluid" alt=""></a>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -571,8 +469,8 @@
 
         </div>
 
-        <form action="forms/submit.php" method="POST" role="form" class="php-email-form p-3 p-md-4">
-          <div class="row">
+        <form action="forms/submit.php" method="POST" role="form" class="php-email-form px-3 py-3">
+          <div class="row rounded-2">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
@@ -623,15 +521,11 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
-  <script>
-    function myFunction() {
-      alert("Sorry the pages are not build yet!!");
-    }
+  
   </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
