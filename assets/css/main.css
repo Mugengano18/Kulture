@@ -1,4 +1,8 @@
-/* Fonts */
+@media screen and (max-width: 768px) {
+  .content {
+      width: 100%;
+  }
+}/* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -1267,8 +1271,6 @@ section {
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-
 
 
 
