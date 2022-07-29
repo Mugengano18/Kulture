@@ -48,18 +48,18 @@ session_start()
           <li><a href="#contact">Contacts</a></li>
           <?php
 
-              if (isset($_SESSION['id'])){
+          if (isset($_SESSION['id'])) {
           ?>
 
-          <li><a href="./forms/logout.php">Logout</a></li>
+            <li><a href="./forms/logout.php">Logout</a></li>
           <?php
-             }else{
+          } else {
           ?>
-           <li><a href="./forms/login.php">Login</a></li>
-           <?php
-         } 
+            <li><a href="./forms/login.php">Login</a></li>
+          <?php
+          }
           ?>
-         
+
         </ul>
       </nav><!-- .navbar -->
 
@@ -146,9 +146,9 @@ session_start()
               <div class="text-center">
                 <a href="learnmore.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
                 <?php
-                      //  echo '<a href="pass.php?link=' . $a . '>Link 1</a>';
+                //  echo '<a href="pass.php?link=' . $a . '>Link 1</a>';
                 ?>
-               
+
               </div>
             </div>
           </div>
@@ -231,11 +231,6 @@ session_start()
             </a>
           </li><!-- End tab nav item -->
 
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
-              <h4>Clothing</h4>
-            </a>
-          </li>
           <!-- End tab nav item -->
 
         </ul>
@@ -249,46 +244,26 @@ session_start()
               <h3>Imitako(Decorations)</h3>
             </div>
 
-
-            <div class="row group_overlay">
+            <div class="row gy-5">
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt="" title="inyegamo"></a>
+              <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg" class="category-img img-fluid" alt="" title="inkoko"></a>
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako2.jpg" class="glightbox"><img src="assets/img/imitako/imitako2.jpg" class="category-img img-fluid" alt=""></a>
-
-
-              </div><!-- category Item -->
-
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako3.jpg" class="glightbox"><img src="assets/img/imitako/imitako3.jpg" class="category-img img-fluid" alt=""></a>
+              <a href="assets/img/imitako/insika.png" class="glightbox"><img src="assets/img/imitako/insika.png" class="category-img img-fluid" alt="" title="insika"></a>
 
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg" class="category-img img-fluid" alt=""></a>
-
-
-
-              </div><!-- category Item -->
-
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako5.jpg" class="glightbox"><img src="assets/img/imitako/imitako5.jpg" class="category-img img-fluid" alt=""></a>
-
+              <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt="" title="wall basket"></a>
 
 
               </div><!-- category Item -->
 
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako6.webp" class="glightbox"><img src="assets/img/imitako/imitako6.jpg" class="category-img img-fluid" alt=""></a>
 
-
-
-              </div><!-- category Item -->
             </div>
           </div><!-- End imitako category Content -->
 
@@ -313,19 +288,7 @@ session_start()
                 <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg" class="category-img img-fluid" alt=""></a>
               </div><!-- category Item -->
 
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg" class="category-img img-fluid" alt=""></a>
-              </div><!-- category Item -->
 
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg" class="category-img img-fluid" alt=""></a>
-
-              </div><!-- category Item -->
-
-              <div class="col-lg-4 category-item">
-                <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg" class="category-img img-fluid" alt=""></a>
-
-              </div><!-- category Item -->
 
             </div>
           </div><!-- End abami category Content -->
@@ -353,56 +316,15 @@ session_start()
 
               </div><!-- Category Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-                </p>
-              </div><!-- Category Item -->
 
             </div>
           </div><!-- End imyidagaduro category Content -->
-
-          <div class="tab-pane fade" id="imyambaro">
-
-            <div class="tab-header text-center">
-              <h3>Imyambaro</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/inkandaclothing1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/inkandaclothing2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-              </div><!-- Category Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/inkandaclothing3.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-              </div>
-
-            </div>
-          </div><!-- End entertainment Category Content -->
 
         </div>
         <div class="text-center load_cat mt-5" data-aos="fade-up" data-aos-delay="200">
           <a href="categories.php">Load More</a>
         </div>
-
       </div>
     </section><!-- End Category Section -->
 
@@ -419,7 +341,9 @@ session_start()
           <div class="swiper-wrapper">
 
             <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum4.jpg); background-size:cover;">
-            <a href="https://museum.gov.rw/index.php?id=68&L=956"><h3><u>Ethnographic Museum</u></h3></a>
+              <a href="https://museum.gov.rw/index.php?id=68&L=956">
+                <h3><u>Ethnographic Museum</u></h3>
+              </a>
               <p class="description">
 
                 A gift from Belgium’s King Badouin in the late 1980s, the Ethnographic Museum now houses one of Africa’s
@@ -430,7 +354,9 @@ session_start()
             </div>
 
             <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum3.jpg); background-size:cover;">
-             <a href="https://museum.gov.rw/index.php?id=69&L=956"><h3><u>King's Palace</u></h3></a>
+              <a href="https://museum.gov.rw/index.php?id=69&L=956">
+                <h3><u>King's Palace</u></h3>
+              </a>
 
               <p class="description">
                 A reconstruction of the traditional royal residence, the King’s Palace is a beautifully-crafted thatched
@@ -439,7 +365,9 @@ session_start()
             </div>
 
             <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum2.jpeg);background-size:contain;">
-              <a href="http://www.museum.gov.rw/index.php?id=2"><h3><u> Rwanda Art Museum</u></h3></a>
+              <a href="http://www.museum.gov.rw/index.php?id=2">
+                <h3><u> Rwanda Art Museum</u></h3>
+              </a>
 
               <p class="description">
                 Formerly the Presidential Palace Museum, this new museum displays contemporary artworks from Rwanda as
@@ -597,10 +525,7 @@ session_start()
 
   <div id="preloader"></div>
 
-  <script>
-    function myFunction() {
-      alert("Sorry the pages are not build yet!!");
-    }
+  
   </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

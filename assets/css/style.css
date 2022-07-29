@@ -1,0 +1,29 @@
+.leftside,.rightside{
+height:150vh;
+width:100%;
+
+
+}
+
+@media screen and (min-width:768px){
+.leftside, .rightside{
+
+height:100vh;
+}
+
+}
+
+.leftside{
+background:white;
+padding-left:20px;
+text-align:justify;
+padding-right:50px;
+
+}
+
+.rightside{
+background:white;
+padding-right:50px;
+text-align:justify;
+}
+

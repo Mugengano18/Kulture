@@ -656,3 +656,68 @@ include('./forms/logout.php');
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- End imitako category Content -->
+
+<div class="tab-pane fade" id="abami">
+
+  <div class="tab-header text-center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                </div><!-- Category Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                </div><!-- Category Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                </div><!-- Category Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                </div><!-- Category Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                </div><!-- Category Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+
+                  </p>
+                </div><!-- Category Item -->
+
+              </div>
+            </div>

@@ -889,7 +889,6 @@ section {
 }
 
 .category .tab-content .category-item .category-img {
-  padding: 0 60px;
   margin-bottom: 15px;
 }
 
@@ -915,10 +914,10 @@ section {
 }
 
 .category .category-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 17px;
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+
 }
 
 /*--------------------------------------------------------------
@@ -1279,4 +1278,10 @@ section {
 }
 .load_cat a:hover {
   background: #3f3e37;
+}
+.entertain .category-item img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: none;
 }

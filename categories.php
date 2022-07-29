@@ -49,8 +49,10 @@ if (isset($_SESSION['id'])) {
         opacity: 1;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
-      .card{
+
+      .card {
         margin-top: 30px;
+        height: auto;
       }
     </style>
   </head>
@@ -108,11 +110,11 @@ if (isset($_SESSION['id'])) {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#imyambaro">
-                <h4>Others</h4>
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#ibindi">
+                <h4>More</h4>
               </a>
             </li>
-           
+
             <!-- End tab nav item -->
 
           </ul>
@@ -123,32 +125,11 @@ if (isset($_SESSION['id'])) {
 
               <div class="row group_overlay d-flex justify-content-start">
 
-
                 <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
-                    <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+                    <a href="assets/img/imitako/imitako4.jpg" class="glightbox"><img src="assets/img/imitako/imitako4.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-                </div><!-- category Item -->
-
-                <div class="col-3 category-item">
-                  <div class="card" style="width: 18rem;">
-                    <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-
-
-                </div><!-- category Item -->
-
-                <div class="col-3 category-item">
-                  <div class="card" style="width: 18rem;">
-                    <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Inkoko</p>
                     </div>
                   </div>
                 </div><!-- category Item -->
@@ -156,25 +137,47 @@ if (isset($_SESSION['id'])) {
                   <div class="card" style="width: 18rem;">
                     <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Wall Basket</p>
                     </div>
                   </div>
                 </div><!-- category Item -->
 
                 <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
-                    <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+                    <a href="assets/img/imitako/insika.png" class="glightbox"><img src="assets/img/imitako/insika.png" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Insika</p>
+                    </div>
+                  </div>
+
+
+                </div><!-- category Item -->
+
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/imitako/vase1.jpg" class="glightbox"><img src="assets/img/imitako/vase1.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Flower Vase </p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/imitako/imigongo.jpg" class="glightbox"><img src="assets/img/imitako/imigongo.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Imigongo Design</p>
                     </div>
                   </div>
                 </div><!-- category Item -->
 
                 <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
-                    <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+                    <a href="assets/img/imitako/imitako8.jpg" class="glightbox"><img src="assets/img/imitako/imitako8.jpg" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Yellow brown wall basket</p>
                     </div>
                   </div>
                 </div><!-- category Item -->
@@ -186,28 +189,113 @@ if (isset($_SESSION['id'])) {
               <div class="row gy-5">
 
                 <div class="col-3 category-item">
-                  <a href="assets/img/kings/king1.jpg" class="glightbox"><img src="assets/img/kings/king1.jpg" class="category-img img-fluid" alt=""></a>
+                  <a href="assets/img/gallery/k1.jpg" class="glightbox"><img src="assets/img/gallery/k1.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
                 <div class="col-3 category-item">
-                  <a href="assets/img/kings/king2.jpg" class="glightbox"><img src="assets/img/kings/king2.jpg" class="category-img img-fluid" alt=""></a>
+                  <a href="assets/img/gallery/k2.jpg" class="glightbox"><img src="assets/img/gallery/k2.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
                 <div class="col-3 category-item">
-                  <a href="assets/img/kings/king3.jpg" class="glightbox"><img src="assets/img/kings/king3.jpg" class="category-img img-fluid" alt=""></a>
+                  <a href="assets/img/gallery/k3.jpg" class="glightbox"><img src="assets/img/gallery/k3.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
                 <div class="col-3 category-item">
-                  <a href="assets/img/kings/king4.jpg" class="glightbox"><img src="assets/img/kings/king4.jpg" class="category-img img-fluid" alt=""></a>
+                  <a href="assets/img/gallery/k4.jpg" class="glightbox"><img src="assets/img/gallery/k4.jpg" class="category-img img-fluid" alt=""></a>
                 </div><!-- category Item -->
 
                 <div class="col-3 category-item">
-                  <a href="assets/img/kings/king5.jpg" class="glightbox"><img src="assets/img/kings/king5.jpg" class="category-img img-fluid" alt=""></a>
+                  <a href="assets/img/gallery/k5.jpg" class="glightbox"><img src="assets/img/gallery/k5.jpg" class="category-img img-fluid" alt=""></a>
 
                 </div><!-- category Item -->
 
                 <div class="col-3 category-item">
-                  <a href="assets/img/kings/king6.jpg" class="glightbox"><img src="assets/img/kings/king6.jpg" class="category-img img-fluid" alt=""></a>
+                  <a href="assets/img/gallery/k6.jpg" class="glightbox"><img src="assets/img/gallery/k6.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k7.jpg" class="glightbox"><img src="assets/img/gallery/k7.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k8.jpg" class="glightbox"><img src="assets/img/gallery/k8.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k9.jpg" class="glightbox"><img src="assets/img/gallery/k9.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k10.jpg" class="glightbox"><img src="assets/img/gallery/k10.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k11.jpg" class="glightbox"><img src="assets/img/gallery/k11.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k12.jpg" class="glightbox"><img src="assets/img/gallery/k12.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k13.jpg" class="glightbox"><img src="assets/img/gallery/k13.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k14.jpg" class="glightbox"><img src="assets/img/gallery/k14.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k15.jpg" class="glightbox"><img src="assets/img/gallery/k15.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k16.jpg" class="glightbox"><img src="assets/img/gallery/k16.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k17.jpg" class="glightbox"><img src="assets/img/gallery/k17.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k18.jpg" class="glightbox"><img src="assets/img/gallery/k18.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k19.jpg" class="glightbox"><img src="assets/img/gallery/k19.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k20.jpg" class="glightbox"><img src="assets/img/gallery/k20.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k21.jpg" class="glightbox"><img src="assets/img/gallery/k21.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k22.jpg" class="glightbox"><img src="assets/img/gallery/k22.jpg" class="category-img img-fluid" alt=""></a>
+
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <a href="assets/img/gallery/k23.jpg" class="glightbox"><img src="assets/img/gallery/k23.jpg" class="category-img img-fluid" alt=""></a>
 
                 </div><!-- category Item -->
 
@@ -216,67 +304,238 @@ if (isset($_SESSION['id'])) {
 
             <div class="tab-pane fade" id="imyidagaduro">
 
-             
-              <div class="row gy-5">
+              <div class="row gy-5 entertain">
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
-                </div><!-- Category Item -->
+                <div class="col-lg-4 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/game1.jpg" class="glightbox"><img src="assets/img/game1.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Urukiramende jumping game</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <div class="col-lg-4 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/game2.jpg" class="glightbox"><img src="assets/img/game2.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Kurasa imyambi(Arrow shooting)</p>
+                    </div>
+                  </div>
 
-                </div><!-- Category Item -->
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/game5.jpg" class="glightbox"><img src="assets/img/game5.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                </div><!-- category Item -->
 
-                </div><!-- Category Item -->
+                <div class="col-lg-4 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Igisoro game </p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+                <div class="col-lg-4 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/intore.jpg" class="glightbox"><img src="assets/img/intore.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Intore traditional dancer</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" style="width:500px; height:200px;" sstyle="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <div class="col-lg-4 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Abakaraza drumming</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
 
-                </div><!-- Category Item -->
+                <div class="col-lg-4 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/game4.jpg" class="glightbox"><img src="assets/img/game4.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Ubuhigi Hunting</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/game6.jpg" class="glightbox"><img src="assets/img/game6.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-                </div><!-- Category Item -->
-
-                <div class="col-3 menu-item">
-                  <a href="assets/img/game7.jpg" class="glightbox"><img src="assets/img/game7.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
-
-                  </p>
-                </div><!-- Category Item -->
-
+                <div class="col-lg-4 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/abana_bitoza_gusimbuka_urukiramende-d3a9f.jpg" class="glightbox"><img src="assets/img/abana_bitoza_gusimbuka_urukiramende-d3a9f.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Kids practising Urukiramende</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
               </div>
-            </div><!-- End imyidagaduro category Content -->
+            </div>
+
+            <!-- End imyidagaduro category Content -->
 
             <div class="tab-pane fade" id="imyambaro">
-
-             
-
               <div class="row gy-5">
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/inkandaclothing1.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/clothing/inkandaclothing1.jpg" class="glightbox"><img src="assets/img/clothing/inkandaclothing1.jpg" class="category-img img-fluid" alt="" title="Inkanda Clothing"></a>
+                    <div class="card-body">
+                      <p class="card-text">Inkanda Clothing</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/clothing/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/clothing/inkandaclothing2.jpg" class="category-img img-fluid" alt="" title="Inkanda Clothing"></a>
+                    <div class="card-body">
+                      <p class="card-text">Inkanda Clothing</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
 
-                </div><!-- Category Item -->
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/clothing/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/clothing/inkandaclothing3.jpg" class="category-img img-fluid" alt="" title="Inkanda Clothing"></a>
+                    <div class="card-body">
+                      <p class="card-text">Inkanda Clothing</p>
+                    </div>
+                  </div>
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/inkandaclothing2.jpg" class="glightbox"><img src="assets/img/inkandaclothing2.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
-                </div><!-- Category Item -->
+                </div><!-- category Item -->
 
-                <div class="col-3 menu-item">
-                  <a href="assets/img/inkandaclothing3.jpg" class="glightbox"><img src="assets/img/inkandaclothing3.jpg" style="width:500px; height:200px;" class="menu-img img-fluid" alt=""></a>
 
-                </div>
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/clothing/inshabure.jpg" class="glightbox"><img src="assets/img/clothing/inshabure.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">front of Ishabure </p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/clothing/abakobwa_bambaye_ishabure_2_-2-8ca59.jpg" class="glightbox"><img src="assets/img/clothing/abakobwa_bambaye_ishabure_2_-2-8ca59.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">back of ishabure</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/clothing/impuzu.jpg" class="glightbox"><img src="assets/img/clothing/impuzu.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Impuzu</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+
+                
 
               </div>
             </div><!-- End entertainment Category Content -->
+            <div class="tab-pane fade" id="ibindi">
+              <div class="row gy-5">
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/Emma Bakayishonga fille du mwami Yuhi Musinga et soeur du mwami Mutara III Rudahigwa.jpg" class="glightbox"><img src="assets/img/ibindi/Emma Bakayishonga fille du mwami Yuhi Musinga et soeur du mwami Mutara III Rudahigwa.jpg" class="category-img img-fluid" alt="" title="Emma Bakayishonga daughter of mwami Yuhi Musinga and sister of mwami Mutara III Rudahigwa"></a>
+                    <div class="card-body">
+                      <p class="card-text">Emma Bakayishonga daughter of mwami Yuhi Musinga and sister of mwami Mutara III Rudahigwa</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/IMG-1180.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1180.JPG" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Uduseke</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
 
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/IMG-1164.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1164.JPG" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">A person with Amasunzu</p>
+                    </div>
+                  </div>
+
+
+                </div><!-- category Item -->
+
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/IMG-1169.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1169.JPG" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Dancing item</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/IMG-1181.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1181.JPG" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">A female rwandan with a comb</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/IMG-1167.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1167.JPG" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text"><bold>Agaseke</bold></p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/Le Mwami du Rwanda Mutara Rudahigwa, son épouse la Reine (Umwamikazi) Rosalie Gicanda (1).jpg" class="glightbox"><img src="assets/img/ibindi/Le Mwami du Rwanda Mutara Rudahigwa, son épouse la Reine (Umwamikazi) Rosalie Gicanda (1).jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">The King of Rwanda Mutara Rudahigwa, his wife the Queen (Umwamikazi) Rosalie Gicanda</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/abari_baserukiye_umunsi_mukuru-ba96c.jpg" class="glightbox"><img src="assets/img/ibindi/abari_baserukiye_umunsi_mukuru-ba96c.jpg" class="category-img img-fluid" alt=""></a>
+                    <div class="card-body">
+                      <p class="card-text">Women wearing traditional clothes <u>Imikenyero</u></p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/IMG-1196.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1196.JPG" class="category-img img-fluid" alt="" title="ingobyi"></a>
+                    <div class="card-body">
+                      <p class="card-text">Ingobyi</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+
+                <div class="col-3 category-item">
+                  <div class="card" style="width: 18rem;">
+                    <a href="assets/img/ibindi/IMG-1192.PNG" class="glightbox"><img src="assets/img/ibindi/IMG-1192.PNG" class="category-img img-fluid" alt="" title="ingobyi"></a>
+                    <div class="card-body">
+                      <p class="card-text">Ingoma</p>
+                    </div>
+                  </div>
+                </div><!-- category Item -->
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
