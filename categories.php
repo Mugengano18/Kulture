@@ -471,16 +471,6 @@ if (isset($_SESSION['id'])) {
 
                 <div class="col-3 category-item">
                   <div class="card" style="width: 18rem;">
-                    <a href="assets/img/ibindi/IMG-1169.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1169.JPG" class="category-img img-fluid" alt=""></a>
-                    <div class="card-body">
-                      <p class="card-text">Dancing item</p>
-                    </div>
-                  </div>
-                </div><!-- category Item -->
-
-
-                <div class="col-3 category-item">
-                  <div class="card" style="width: 18rem;">
                     <a href="assets/img/ibindi/IMG-1181.JPG" class="glightbox"><img src="assets/img/ibindi/IMG-1181.JPG" class="category-img img-fluid" alt=""></a>
                     <div class="card-body">
                       <p class="card-text">A female rwandan with a comb</p>
