@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="420a6fad-c8de-46f1-a46b-58b847aa1c97" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/learnmore.php" afterDir="false" />
@@ -12,6 +13,9 @@
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learnmore.html" beforeDir="false" />
     </list>
+=======
+    <list default="true" id="420a6fad-c8de-46f1-a46b-58b847aa1c97" name="Changes" comment="" />
+>>>>>>> 80fcfe11a483b55a6662539a72517f990e77a8ec
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

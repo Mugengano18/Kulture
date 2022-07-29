@@ -48,7 +48,20 @@ session_start()
           <li><a href="#museum">Museums</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contacts</a></li>
-          <li><a href="./forms/login.php">Login</a></li>
+          <?php
+
+              if (isset($_SESSION['id'])){
+          ?>
+
+          <li><a href="./forms/logout.php">Logout</a></li>
+          <?php
+             }else{
+          ?>
+           <li><a href="./forms/login.php">Login</a></li>
+           <?php
+         } 
+          ?>
+         
         </ul>
       </nav><!-- .navbar -->
 
@@ -61,9 +74,9 @@ session_start()
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start ml-5">
           <h2 data-aos="fade-up">Kulture Rwanda.<br>BANYARWANDA.</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Rwandans share cultural values notably unity, patriotism, social
-            cohesion, resilience, hard work among others, with Kinyarwanda being the common language, spoken in all
-            parts the country.</p>
+          <p data-aos="fade-up" data-aos-delay="100">Rwandans share cultural values such as togetherness,
+            patriotism, social cohesiveness, resilience, and hard work, among others, with Kinyarwanda
+            being the common language used throughout the country.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="https://www.youtube.com/watch?v=uOJV9OLnwT8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Brief
                 history</span></a>
@@ -87,7 +100,7 @@ session_start()
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/intore.jpg) ; background-repeat: none; background-size:cover;" data-aos="fade-up" data-aos-delay="150" title="Intore">
             <div class="call-us position-absolute">
               <h4>INTORE</h4>
             </div>
@@ -110,7 +123,7 @@ session_start()
               </p>
 
               <div class="position-relative mt-4">
-                <img src="assets/img/kingpalace.jpg" class="img-fluid" alt="">
+                <img src="assets/img/kingpalace.jpg" class="img-fluid" alt="King's palace">
                 <a href="https://www.youtube.com/watch?v=zmy-zm1Z0b8" class="glightbox play-btn"></a>
               </div>
             </div>
@@ -130,14 +143,14 @@ session_start()
             <div class="why-box">
               <h3>Rwandan Culture and Traditions</h3>
               <p>
-                Weaving and basket making is a traditional art still used today to make dry containers for storing food
-                and medicines. These are also known as peace pots and had traditional values such as to commemorate
-                weddings or as a welcome gift.
-
-
-              </p>
+                Discover Rwanda's people and culture, as well as its customs, rituals, and way of life, through Visit & Tour Rwanda.
+                Attend cultural nights that are enjoyable and educational for both locals and visitors.</p>
               <div class="text-center">
                 <a href="learnmore.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <?php
+                      //  echo '<a href="pass.php?link=' . $a . '>Link 1</a>';
+                ?>
+               
               </div>
             </div>
           </div>
@@ -147,10 +160,13 @@ session_start()
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/IMG-0928.JPG" alt="" class="img-fluid">
-                  <h4>Poetry</h4>
-                  <p>Ibitekerezo is a form of epic hero poetry that was performed at the royal court in precolonial
-                    Rwanda. This oral tradition serves to explain the history of Rwandan dynasties in poetic form. </p>
+                  <img src="assets/img/highlights/Amasunzu hairstyle_ Rwanda.png" alt="" class="img-fluid">
+                  <h4>Amasunzu</h4>
+                  <p>The Amasunzu traditional hairdo is without a doubt one of the most inventive.
+                    It was and still is a sign of pride in Rwanda, and it is still worn today.
+                    The distinctive look is achieved by cutting portion of the hair horizontally and braiding the top.
+                    A person with this haircut was seen to be powerful, aristocratic, dignified, and fearless.
+                  </p>
                 </div>
               </div>
 
@@ -158,17 +174,19 @@ session_start()
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/img/imigongo.jfif" alt="" class="img-fluid">
                   <h4>Imigongo</h4>
-                  <p>A distinctively Rwandan craft is the Imigongo or cow dung paintings that are produced by a local
-                    co-operative in the village of Nyakarambi near the border with Tanzania.</p>
+                  <p>Imigongo, or cow dung paintings, are a uniquely Rwandan craft made by a local co-operative
+                    in the community of Nyakarambi near the Tanzanian border. These one-of-a-kind and earthy pieces,
+                    dominated by black, brown, and white whirls and other geometric patterns, can be found in artisan markets around the country.</p>
                 </div>
               </div>
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/img/umuganda.jpg" alt="" class="img-fluid">
-                  <h4>Umuganda</h4>
-                  <p>In traditional Rwandan culture, members of the community would call upon their family, friends and
-                    neighbors to help them complete a difficult task.</p>
+                  <img src="assets/img/highlights/Support Female Empowerment _ Indego Africa.jpg" alt="" class="img-fluid">
+                  <h4>Artisanal Crafts</h4>
+                  <p>Weaving and basket building are historic crafts that are being practiced today to provide dry containers for storing food and medications.
+                    Pottery is one of Rwanda's earliest kinds of art, and it is being practiced in many places today utilizing ancient Batwa techniques.
+                    These potteries, known for their high quality clay, are still commonly used for cooking and storing liquids.</p>
                 </div>
               </div>
 
@@ -182,7 +200,7 @@ session_start()
 
     <!-- ======= culture showcase Section ======= -->
     <section id="" class="culture-showcase">
-      <div class="container" data-aos="zoom-out">
+      <div class="container" data-aos="zoom-out" title="Traditional Rwandan Youth">
         <div class="row gy-4">
         </div>
       </div>
@@ -237,18 +255,18 @@ session_start()
             <div class="row group_overlay">
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/imitako/imitako1.jpg" class="glightbox"><img src="assets/img/imitako/imitako1.jpg" class="category-img img-fluid" alt="" title="inyegamo"></a>
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako2.jpg" class="glightbox"><img src="assets/img/imitako/imitako2.jpg" class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/imitako/insika.png" class="glightbox"><img src="assets/img/imitako/insika.png" class="category-img img-fluid" alt=""></a>
 
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako3.jpg" class="glightbox"><img src="assets/img/imitako/imitako3.jpg" class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/imitako/vase1.jpg" class="glightbox"><img src="assets/img/imitako/vase1.jpg" class="category-img img-fluid" alt=""></a>
 
 
               </div><!-- category Item -->
@@ -261,14 +279,14 @@ session_start()
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako5.jpg" class="glightbox"><img src="assets/img/imitako/imitako5.jpg" class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/imitako/imigongo.jpg" class="glightbox"><img src="assets/img/imitako/imigongo.jpg" class="category-img img-fluid" alt=""></a>
 
 
 
               </div><!-- category Item -->
 
               <div class="col-lg-4 category-item">
-                <a href="assets/img/imitako/imitako6.webp" class="glightbox"><img src="assets/img/imitako/imitako6.jpg" class="category-img img-fluid" alt=""></a>
+                <a href="assets/img/imitako/imitako8.jpg" class="glightbox"><img src="assets/img/imitako/imitako8.jpg" class="category-img img-fluid" alt=""></a>
 
 
 
@@ -383,8 +401,13 @@ session_start()
           </div><!-- End entertainment Category Content -->
 
         </div>
+<<<<<<< HEAD
         <div class="col">
         <a href="categories.php">Load More</a>
+=======
+        <div class="text-center load_cat mt-5" data-aos="fade-up" data-aos-delay="200">
+          <a href="categories.php">Load More</a>
+>>>>>>> 80fcfe11a483b55a6662539a72517f990e77a8ec
         </div>
 
       </div>
@@ -403,7 +426,7 @@ session_start()
           <div class="swiper-wrapper">
 
             <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum4.jpg); background-size:cover;">
-              <h3>Ethnographic museum of Rwanda</h3>
+            <a href="https://museum.gov.rw/index.php?id=68&L=956"><h3><u>Ethnographic Museum</u></h3></a>
               <p class="description">
 
                 A gift from Belgium’s King Badouin in the late 1980s, the Ethnographic Museum now houses one of Africa’s
@@ -414,7 +437,7 @@ session_start()
             </div>
 
             <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum3.jpg); background-size:cover;">
-              <h3>King 's Palace</h3>
+             <a href="https://museum.gov.rw/index.php?id=69&L=956"><h3><u>King's Palace</u></h3></a>
 
               <p class="description">
                 A reconstruction of the traditional royal residence, the King’s Palace is a beautifully-crafted thatched
@@ -423,7 +446,7 @@ session_start()
             </div>
 
             <div class="swiper-slide museum-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/museums/museum2.jpeg);background-size:contain;">
-              <h3>Rwanda Art museum</h3>
+              <a href="http://www.museum.gov.rw/index.php?id=2"><h3><u> Rwanda Art Museum</u></h3></a>
 
               <p class="description">
                 Formerly the Presidential Palace Museum, this new museum displays contemporary artworks from Rwanda as

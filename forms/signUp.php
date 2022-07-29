@@ -8,6 +8,7 @@
 
 <head>
 
+    <title>Sign Ups</title>
     <!-- <title>My Awesome Login Page</title> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -41,8 +42,6 @@
         .user_card {
             height: auto;
             width: 500px;
-            margin-top: auto;
-            margin-bottom: auto;
             background: #ffffff;
             position: relative;
             display: flex;
@@ -63,9 +62,11 @@
             background: #825834 !important;
             color: white !important;
         }
-        .login_btn:hover{
+
+        .login_btn:hover {
             background: #d4c2c0 !important;
         }
+
         .login_btn:focus {
             box-shadow: none !important;
             outline: 0px !important;
@@ -91,8 +92,13 @@
         .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
             background-color: #ffffff !important;
         }
-        form{
-            width: 95%;
+
+        form {
+            width: 100%;
+        }
+
+        button {
+            width: 200px;
         }
     </style>
 </head>
@@ -102,8 +108,8 @@
     <div class="container h-100">
         <div class="d-flex justify-content-center h-100">
             <div class="user_card ">
-                <div class="d-flex justify-content-center pt-4 mb-2">
-                    <h1>Sign Up</h1>
+                <div class="d-flex justify-content-center pt-4 mb-5">
+                    <h1>SIGN UP</h1>
                 </div>
 
                 <div class="d-flex justify-content-center">

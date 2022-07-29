@@ -744,7 +744,8 @@ section {
 }
 
 .cultural-benefit .icon-box img {
-  height: 150px;
+  width: 250px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -919,7 +920,7 @@ section {
 
 .category .category-item img {
   width: 1000px;
-  height: 250px;
+  height: 1000px;
   object-fit: cover;
   border-radius: 17px;
 }
@@ -1272,5 +1273,19 @@ section {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+<<<<<<< HEAD
 
 
+=======
+.load_cat a {
+  background: var(--color-primary);
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.load_cat a:hover {
+  background: #3f3e37;
+}
+>>>>>>> 80fcfe11a483b55a6662539a72517f990e77a8ec

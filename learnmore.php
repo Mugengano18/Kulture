@@ -1,7 +1,10 @@
 <?php
-session_start()
+session_start();
+
+if (isset($_SESSION['id'])) {
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,6 +38,7 @@ session_start()
 </head>
 
 <body>
+<<<<<<< HEAD
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
@@ -59,6 +63,32 @@ session_start()
     </div>
   </header>
   <!-- End Header -->
+=======
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1>Kulture<span>.</span></h1>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.php #home">Home</a></li>
+            <li><a href="index.php #about">About</a></li>
+            <li><a href="index.php #category">Cultural Items</a></li>
+            <li><a href="index.php #museum">Museums</a></li>
+            <li><a href="index.php #gallery">Gallery</a></li>
+            <li><a href="index.php #contact">Contacts</a></li>
+            <li><a href="./forms/logout.php">Logout</a></li>
+          </ul>
+        </nav><!-- .navbar -->
+
+      </div>
+    </header>
+    <!-- End Header -->
+>>>>>>> 80fcfe11a483b55a6662539a72517f990e77a8ec
   < div class="row">
 
    < div class="color">
@@ -187,6 +217,17 @@ recognizing others as Rwandans.</p>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<<<<<<< HEAD
+=======
+
+  <?php
+} else {
+
+  header("Location: ./forms/login.php?id=3");
+}
+
+  ?>
+>>>>>>> 80fcfe11a483b55a6662539a72517f990e77a8ec
 </body>
 
 </html>
